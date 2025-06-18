@@ -16,3 +16,86 @@
 @import url('./badges.css');
 @import url('./back-link.css');
 @import url('./footer.css');
+
+/*Timer Style*/
+
+.container {
+  margin: 0 auto;
+}
+
+.date-input-button-wrapper {
+  display: flex;
+
+  gap: 8px;
+}
+
+.date-input {
+  padding-left: 5px;
+  border-radius: 4px;
+  width: 272px;
+  height: 40px;
+  outline: none;
+  border: 1px solid #808080;
+  border-radius: 4px;
+  color: #2e2f42;
+}
+
+.date-input:hover {
+  border: 1px solid #000000;
+}
+
+.date-input:focus {
+  border: 1px solid #4e75ff;
+}
+
+.date-input:disabled {
+  border: 1px solid #808080;
+  color: #808080;
+}
+
+.start-button {
+  border-radius: 8px;
+  padding: 8px 16px;
+  width: 75px;
+  height: 40px;
+  background: #4e75ff;
+  outline: none;
+  border: none;
+  color: #ffffff;
+}
+
+.start-button:hover {
+  background: #6c8cff;
+}
+
+.start-button:disabled {
+  background: #cfcfcf;
+  color: #989898;
+}
+
+.timer {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: row;
+  gap: 24px;
+}
+
+.value {
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 48px;
+  letter-spacing: 1.6px;
+  color: #2e2f42;
+}
+
+.label {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #2e2f42;
+}
+.field {
+  display: flex;
+  flex-direction: column;
+}
