@@ -6,9 +6,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Snackbar</title>
     <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="izitoast/dist/css/iziToast.min.css" />
   </head>
   <body>
     <load src="./partials/back-link.html" />
+
+    <form class="form">
+      <label class="form-delay">
+        Delay (ms)
+        <input class="delay-input" type="number" name="delay" required />
+      </label>
+
+      <fieldset class="form-fieldset">
+        <legend>State</legend>
+        <div class="state-radio-group">
+          <label>
+            <input type="radio" name="state" value="fulfilled" required />
+            Fulfilled
+          </label>
+          <label>
+            <input type="radio" name="state" value="rejected" required />
+            Rejected
+          </label>
+        </div>
+      </fieldset>
+
+      <button type="submit" class="form-button">Create notification</button>
+    </form>
+
     <script type="module" src="./js/02-snackbar.js"></script>
   </body>
 </html>
